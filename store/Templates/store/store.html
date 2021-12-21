@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .header{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("static/images/banner44.jpg");
+        }
+    </style>
+    
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <section class="header" id="headers">
+        <div class="container">
+            <img src=" {% static  'images/logo2.png' %}">
+    
+       
+         <button type="button" class="login-btn"  >Login</button> 
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1> Discover New Places</h1>
+        <div class="input-group">
+        </div>
+    </section>
+    <br>
+    
+    <section class="products" id="products">
+    <div class="heading">
+        <h1>Featured Destinations</h1>
+    </div>
+    <div class="products-cont">
+        <div class="box">
+            <img src="{% static 'images/avdata.jpg' %}" alt="">
+            <h3>Ein Avdat</h3>
+            <p>At the foot of Midreshet Ben Gurion,<br>
+                 the Tsin Stream has carved out a deep and impressive canyon.<br>
+                  Three springs feed a brook that flows all year round, <br>
+                  and an enchanted oasis. En Avdat – the kingdom of ibex and vultures. </p> 
+            <div class="content">
+                <span> <h5>50$</h5></span>
+            </div>
+            </div><div class="box">
+                <img src="{% static 'images/telaviv.jpg' %}" alt="">
+                <h3>Tel Aviv</h3>
+                <P>Tel Aviv is one of the most vibrant cities in the world, combining sandy Mediterranean beaches with a world-class nightlife, a buzzing cultural scene, incredible food, UNESCO recognized architecture, and an international outlook. </P>
+                <div class="content">
+                    <span> <h5>50$</h5></span>
+                </div>
+                </div><div class="box">
+                    <img src="{% static 'images/jer (2).jpg' %}" alt="">
+                    <h3>Jerusalem</h3>
+                     <p>jerusalem is on a plateau in the Judaean Mountains between the Mediterranean and the Dead Sea. It is one of the oldest cities in the world, and is considered holy to the three major Abrahamic religions—Judaism, Christianity, and Islam. </p>
+                    <div class="content">
+                        <span> <h5>50$</h5></span>
+                    </div>
+                    </div><div class="box">
+                        <img src="{% static 'images/mekh.jpg' %}" alt="">
+                        <h3>Makhtesh Ramon</h3>
+                    <p>Makhtesh Ramon  is a geological feature of Israel's Negev desert. Located some 85 km south of the city of Beersheba, the landform is not an impact crater from a meteor nor a volcanic crater formed by a volcanic eruption, but rather is the world's largest "erosion cirque" (steephead valley or box canyon).</p>
+                        <div class="content">
+                            <span> <h5>50$</h5></span>
+                        </div>
+                        </div>
+       
+        <div class="box">
+            <img src="{% static 'images/timnaa.jpg' %}" alt="">
+            <h3>Park Timna</h3>
+           <p>Surrounded by yellow sandstone mountains on three sides, this scenic valley features ancient copper mines, the red volcanic Mt. Timna at its center and “The Mushroom,” a sandstone rock shaped by wind and water resembling a giant mushroom. </p> 
+            <div class="content">
+                <span> <h5>70$</h5></span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="{% static 'images/istockphoto.jpg' %}" alt="">
+            <h3>Dead Sea</h3> 
+            <p>Dead Sea is the lowest point on the earth,its surrounded by the stunning landscape of the Negev Desert </p> 
+            <div class="content">
+                <span> <h5>50$</h5></span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <br>
+    <br>
+     <section class="footer">
+      <div class="container">
+     <div class="row"> 
+         <div class="col-md-3">
+             <img src=" {% static  'images/logo2.png' %}" class="footer-logo">
+             <p> Our website is more of a community for those who adore discovering new places!
+                 <br>
+                Here we've collected all the best places for you to visit. </p>
+         </div>
+         <div class="col-md-3">
+             <h4>Features</h4>
+             <p>Deals & Offers</p>
+             <p>Customer Reviews</p>
+             <p>Cancelatio Policy</p>
+         </div>
+         <div class="col-md-3">
+            <h4>Quick Contact</h4>
+            <p>Tel:050888888</p>
+            <p>Email:Discover@gmail.com</p>
+           
+        </div>
+        <div class="col-md-3">
+            <h4>Follow Us on </h4>
+            <p>FB : Discover </p>
+            <p>Twitter : Discover21</p>
+            <p>Instagram : Discover21</p>
+        </div>
+     </div>
+         </div>
+     </section></body>
+</html>
+
+
