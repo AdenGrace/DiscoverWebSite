@@ -11,7 +11,22 @@ import os
 from pathlib import Path
 from . info import *
 
+
+
+# https://docs.djangoproject.com/en/dev/ref/settings/#test-runner
+TEST_RUNNER = "django.test.runner.DiscoverRunner"
+
+# CACHES
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/dev/ref/settings/#caches
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "",
+    }
+}
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 EMAIL_USE_TLS = EMAIL_USE_TLS
