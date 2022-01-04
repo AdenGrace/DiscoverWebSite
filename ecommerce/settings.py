@@ -15,6 +15,7 @@ from . info import *
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#test-runner
 TEST_RUNNER = "django.test.runner.DiscoverRunner"
+AUTH_USER_MODEL = 'store.user'
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -56,7 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    #'django.contrib.User',
     'store.apps.StoreConfig',
 ]
 
